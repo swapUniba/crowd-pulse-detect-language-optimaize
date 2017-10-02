@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'maven'
+}
+
+sourceCompatibility = 1.8
+
+group = 'com.github.swapUniba'
+version = '0.0.1'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    compile 'com.github.swapUniba:crowd-pulse-data-java:0.0.1'
+    compile 'com.github.swapUniba:crowd-pulse-detect-language:0.0.1'
+    compile group: 'com.optimaize.languagedetector', name: 'language-detector', version: '0.4'
+}

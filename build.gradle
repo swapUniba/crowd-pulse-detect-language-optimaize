@@ -15,8 +15,12 @@ repositories {
     }
 }
 
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 dependencies {
-    compile 'com.github.swapUniba:crowd-pulse-data-java:0.0.1'
-    compile 'com.github.swapUniba:crowd-pulse-detect-language:0.0.1'
+    compile 'com.github.swapUniba:crowd-pulse-data-java:master-SNAPSHOT'
+    compile 'com.github.swapUniba:crowd-pulse-detect-language:master-SNAPSHOT'
     compile group: 'com.optimaize.languagedetector', name: 'language-detector', version: '0.4'
 }
